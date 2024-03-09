@@ -504,9 +504,19 @@ footer hr {
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1080px) {
     html {
         font-size: 1.8vw;
+    }
+
+    header {
+        height: auto;
+        padding: 40px;
+    }
+
+    .logo {
+        width: 40%;
+        height: auto;
     }
 
     .placing-block {
