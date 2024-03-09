@@ -1,3 +1,13 @@
+const headerturn = document.querySelector(`.burger-btn`);
+const secondheader = document.querySelector(`.closed-nav`)
+
+headerturn.addEventListener(`click`, function(evt) {
+  headerturn.classList.toggle(`burger--turned`)
+  secondheader.classList.toggle(`translate-nav`)
+})
+
+// ------------------------
+
 document.querySelectorAll(".dropdown").forEach((item) => {
     item.addEventListener("click", function () {
         this.setAttribute("tabindex", 1);
