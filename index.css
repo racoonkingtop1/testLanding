@@ -515,6 +515,14 @@ footer hr {
         position: sticky;
     }
 
+    .opened-nav {
+        display: none;
+    }
+
+    .burger-btn, .closed-nav {
+        display: flex;
+    }
+
     .logo {
         width: 40%;
         height: auto;
@@ -531,10 +539,38 @@ footer hr {
         padding: 80px 40px;
         background-color: rgb(255, 255, 255, 0.2);
         backdrop-filter: blur(5px);
+        gap: 80px;
     }
 
     .top-content__head, .top-content__list, .top-content__list-item {
         text-shadow: 1px 1px 2px white;
+    }
+
+    .top-content__head {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .top-content__list p {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .top-content__list-item {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .top-content__btns {
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+    }
+
+    .top-content__btns button {
+        font-size: 30px;
+        width: 40%;
+        height: fit-content;
     }
 
     .placing-block {
@@ -581,29 +617,7 @@ footer hr {
 
     .name-input {
         height: 3.5vw;
-    }
-
-    .top-content {
-        gap: 2rem;
-    }
-    
-    .top-content__head {
-        font-size: 1.5rem;
-        line-height: 1.8rem;
-    }
-
-    .top-content__btns button {
-        width: 16.48vw;
-        height: 3.88vw;
-    }
-
-    .opened-nav {
-        display: none;
-    }
-
-    .burger-btn, .closed-nav {
-        display: flex;
-    }
+    }    
 }
 
 @media(max-width: 720px) {
