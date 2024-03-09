@@ -512,11 +512,29 @@ footer hr {
     header {
         height: auto;
         padding: 40px;
+        position: sticky;
     }
 
     .logo {
         width: 40%;
         height: auto;
+    }
+
+    .top-block {
+        padding: 0;
+    }
+
+    .top-content {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 40px;
+        background-color: rgb(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+    }
+
+    .top-content__head, .top-content__list, .top-content__list-item {
+        text-shadow: 1px 1px 2px white;
     }
 
     .placing-block {
@@ -569,11 +587,6 @@ footer hr {
         gap: 2rem;
     }
     
-    .top-block {
-        background-position: unset;
-        padding: 14vw 10vw 5vw;
-    }
-
     .top-content__head {
         font-size: 1.5rem;
         line-height: 1.8rem;
