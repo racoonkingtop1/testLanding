@@ -565,20 +565,23 @@ footer hr {
     .top-content__btns {
         width: 100%;
         height: fit-content;
+        flex-wrap: wrap;
+        gap: 10px;
         justify-content: center;
     }
 
     .top-content__btns button {
         font-size: 20px;
-        width: 40%;
+        width: 90%;
+        padding: 15px;
         height: fit-content;
     }
 
     /*  */
 
     .placing-block {
-        padding-left: 20vw;
-        padding-right: 20vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 
     .placing__top p:first-child, .placing__top p span {
@@ -621,18 +624,77 @@ footer hr {
         rotate: 90deg;
     }
 
+    /*  */
+
     .form-top {
         height: fit-content;
         flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .dropdown, .email-input, .name-input {
+        width: 100%;
+        flex-grow: unset;
+        flex-basis: unset;
+        height: 40px;
     }
 
     .select {
         padding-left: 0 !important;
+        font-size: 16px;
+    }
+    
+    .form-bottom {
+        flex-wrap: wrap;
+        height: fit-content;
     }
 
-    .name-input {
-        height: 3.5vw;
-    }    
+    .file-input__label {
+        padding: 15px 0;
+        margin-top: 20px;
+        border-radius: 3px;
+    }
+
+    .submit-form {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* */
+
+    footer {
+        flex-wrap: wrap;
+        padding: 15px 10vw;
+        height: fit-content;
+    }
+
+    footer hr {
+        display: none;
+    }
+
+    .footer__copyright {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    footer div {
+        display: block;
+    }
+
+    footer div p, footer div a {
+        font-size: 20px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    footer img {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 @media(max-width: 720px) {
