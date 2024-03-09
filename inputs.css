@@ -1,0 +1,193 @@
+/*Styling Selectbox*/
+.dropdown {
+    flex-grow: 1;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all .5s ease;
+    position: relative;
+    font-size: 1rem;
+    color: #474747;
+    text-align: left;
+    box-sizing: border-box;
+    flex-basis: calc(100% / 3 * 1);
+    padding-left: 0.5rem;
+}
+.dropdown .select {
+    cursor: pointer;
+    display: block;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+.dropdown .select > i {
+    font-size: 13px;
+    color: #888;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    float: right;
+    line-height: 20px
+}
+.dropdown:hover {
+    box-shadow: 0 0 4px rgb(204, 204, 204)
+}
+.dropdown:active {
+    background-color: #f8f8f8
+}
+.dropdown.active:hover, .dropdown.active {
+    box-shadow: 0 0 4px rgb(204, 204, 204);
+    border-radius: 2px 2px 0 0;
+    background-color: #f8f8f8
+}
+.dropdown.active .select > i {
+    transform: rotate(-90deg)
+}
+.dropdown .dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+    margin-top: 1px;
+    box-shadow: 0 1px 2px rgb(204, 204, 204);
+    border-radius: 0 1px 2px 2px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9;
+    box-sizing: border-box;
+}
+.dropdown .dropdown-menu li {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer
+} 
+.dropdown .dropdown-menu {
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+.dropdown .dropdown-menu li:hover {
+    background-color: #f2f2f2
+}
+.dropdown .dropdown-menu li:active {
+    background-color: #e2e2e2
+}
+
+
+/* -------------*/
+
+.range {
+    width: 100%;
+
+    -webkit-appearance: none;
+    height: 7px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    background-image: linear-gradient(#ffffff, #ffffff);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+}
+
+[dir="rtl"] input[type="range"] {
+    background: #3E9CDC;
+    background-image: linear-gradient(#fff, #fff);
+    background-size: 30% 100%;
+    background-repeat: no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #3E9CDC;
+    cursor: grab;
+    box-shadow: 0 0 2px 0 #555;
+    transition: .3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+    cursor: grabbing;
+}
+
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #3E9CDC;
+    cursor: grab;
+    box-shadow: 0 0 2px 0 #555;
+    transition:  .3s ease-in-out;
+}
+
+input[type="range"]::-ms-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #3E9CDC;
+    cursor:grab;
+    box-shadow: 0 0 2px 0 #555;
+    transition: .3s ease-in-out;
+}
+  
+  input[type="range"]::-webkit-slider-thumb:hover {
+    background: #3E9CDC;
+}
+
+/* Input Track */
+input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+  
+input[type=range]::-moz-range-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+  
+input[type="range"]::-ms-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}  
+
+.output__container {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 0.75rem;
+    transform: translateX(2rem);
+}
+
+.output__container span {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    transform: translateX(-2rem);
+}
+
+#rangevalue {
+    color: white;
+    background-color: unset;
+    border: none;
+    width: min-content;
+    height: fit-content;
+    font-size: 1rem;
+    box-sizing: border-box;
+
+}
+
+#rangevalue::-webkit-outer-spin-button {
+    display: none;
+}
+
+#rangevalue::-webkit-inner-spin-button {
+    display: none;
+}

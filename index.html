@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoremIpsum</title>
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="inputs.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/lorem.svg" alt="">
+        <nav>
+            <a class="lato nav-link nav-link--chosen" href="">БИЗНЕС</a>
+            <a class="lato nav-link" href="">О НАС</a>
+            <a class="lato nav-link" href="">ЦЕНЫ</a>
+            <a class="lato nav-link" href="">ОФОРМИТЬ ЗАКАЗ</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="top-block">
+            <div class="top-content">
+                <p class="top-content__head"><span>LOREM IPSUM</span> DOLOR SIT AMETCONSECTETUR <span>ADIPISCING</span></p>
+                <div class="top-content__list">
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+                    <ul>
+                        <li class="top-content__list-item">Totam rem aperiam eaque ipsa</li>
+                        <li class="top-content__list-item">Sit voluptatem accusantium doloremque laudantium</li>
+                        <li class="top-content__list-item">Sed ut perspiciatis, unde omnis iste natus error</li>
+                    </ul>
+                </div>
+                <div class="top-content__btns">
+                    <button>ЗАКАЗАТЬ</button>
+                    <button>ПОДРОБНЕЕ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="placing-block">
+            <div class="placing__content">
+                <!-- вступление к форме -->
+                <div class="placing__top">
+                    <p>ОФОРМЛЕНИЕ <span>ЗАКАЗА</span></p>
+                    <p>Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+                </div>
+                <!-- кругляшки -->
+                <div class="placing__circles">
+                    <div class="circle__container">
+                        <div class="circle">
+                            <img src="assets/circle1.svg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="circle__container">
+                        <div class="circle">
+                            <img src="assets/circle2.svg" alt="">
+                        </div>
+                        <p>Сonsecteturadipiscing elit</p>
+                    </div>
+                    <div class="circle__container">
+                        <div class="circle">
+                            <img src="assets/circle3.svg" alt="">
+                        </div>
+                        <p>Sed do eiusmod tempor</p>
+                    </div>
+                    <div class="circle__container">
+                        <div class="circle">
+                            <img src="assets/circle4.svg" alt="">
+                        </div>
+                        <p>Esse cillum doloreeu fugiat</p>
+                    </div>
+                    <div class="circle__container">
+                        <div class="circle">
+                            <img src="assets/circle5.svg" alt="">
+                        </div>
+                        <p>Excepteur sint occaecat cupidatat non proident</p>
+                    </div>
+
+                    <div class="dots">
+                        <img src="assets/dots.svg" alt="">
+                        <img src="assets/dots.svg" alt="">
+                        <img src="assets/dots.svg" alt="">
+                        <img src="assets/dots.svg" alt="">
+                    </div>
+                </div>
+                <!-- форма -->
+                <form action="" class="placing__form">
+                    <div class="form-top">
+                        <div class="dropdown">
+                            <div class="select">
+                              <span>Выберите тип системы</span>
+                              <i class="fa fa-chevron-left"></i>
+                            </div>
+                            <input type="hidden" name="gender">
+                            <ul class="dropdown-menu">
+                              <li id="first">Sed ut perspiciatis</li>
+                              <li id="second">Sed ut perspiciatis</li>
+                              <li id="third">Sed ut perspiciatis</li>
+                              <li id="fourth">Sed ut perspiciatis</li>
+                              <li id="fifth">Sed ut perspiciatis</li>
+                              <li id="sixth">Sed ut perspiciatis</li>
+                              <li id="seventh">Sed ut perspiciatis</li>
+                              <li id="eighth">Sed ut perspiciatis</li>
+                            </ul>
+                        </div>
+                        <input class="email-input" placeholder="Ваш e-mail" type="email" name="" id="">
+                        <input class="name-input" placeholder="Ваше имя" type="text" name="" id="">
+                    </div>
+                    <div class="form-bottom">
+                        <div class="range__container">
+                            <div class="output__container">
+                                <input id="rangevalue" type="number" readonly id="rangenumber" min="0" max="100" value="70" oninput="range.value=value">
+                                <span class="percent-sign">%</span>
+                            </div>
+                            <input class="range" type="range" value="70" min="0" max="100" oninput="rangevalue.value=value"/>
+                        </div>
+                        
+                        <label for="" class="button-file-input">
+                            <p class="file-input__label"><img src="assets/file.svg" alt="">ПРИКРЕПИТЬ ФАЙЛ</p>
+                            
+                              <input type="file" name="upload" id="upload" class="upload-box" placeholder="Upload File">
+                        </div>
+                        <button class="submit-form" type="submit">ОТПРАВИТЬ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="footer__copyright">© 2018 «LoremIpsum.net» Все права защищены.</p>
+        <hr>
+        <div>
+            <p>
+                <img src="assets/qiwi.svg" alt="">
+                QIWI wallet
+            </p>
+            <p>
+                <img src="assets/yamoney.svg" alt="">
+                Yandex Money
+            </p>
+            <p>
+                <img src="assets/webmoney.svg" alt="">
+                Web Money
+            </p>
+        </div>
+        <hr>
+        <div>
+            <a href="">
+                <img src="assets/message.svg" alt="">
+                info@ipsum228.ru
+            </a>
+            <a href="">
+                <img src="assets/vk.svg" alt="">
+                Мы вконтакте
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
