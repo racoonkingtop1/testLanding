@@ -262,6 +262,10 @@ header {
     position: relative;
 }
 
+.dotimg {
+    display: none;
+}
+
 .circle img {
     min-width: 35%;
     max-width: 45%;
@@ -536,7 +540,7 @@ footer hr {
         width: 100%;
         justify-content: center;
         align-items: center;
-        padding: 80px 10px;
+        padding: 80px 40px;
         background-color: rgb(255, 255, 255, 0.2);
         backdrop-filter: blur(5px);
         gap: 80px;
@@ -604,6 +608,13 @@ footer hr {
         width: max-content;
     }
 
+    .circle__container p {
+        font-size: 24px;
+        margin-top: 20px;
+        max-width: 300px;
+        text-align: center;
+    }
+
     .circle {
         width: 300px;
         height: 300px;
@@ -626,6 +637,10 @@ footer hr {
 
     /*  */
 
+    .placing__form {
+        margin-top: 80px;
+    }
+
     .form-top {
         height: fit-content;
         flex-wrap: wrap;
@@ -637,6 +652,7 @@ footer hr {
         flex-grow: unset;
         flex-basis: unset;
         height: 40px;
+        font-size: 16px;
     }
 
     .select {
@@ -650,14 +666,29 @@ footer hr {
     }
 
     .file-input__label {
-        padding: 15px 0;
+        padding: 10px 0;
         margin-top: 20px;
         border-radius: 3px;
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    #rangevalue, .output__container span {
+        font-size: 24px !important;
+    }
+    
+    #rangevalue {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        transform: translateX(20px);
     }
 
     .submit-form {
         width: 100%;
-        margin-top: 10px;
+        margin-top: 40px;
+        padding: 20px 0;
+        font-size: 20px;
     }
 
     /* */
@@ -666,6 +697,8 @@ footer hr {
         flex-wrap: wrap;
         padding: 15px 10vw;
         height: fit-content;
+        align-items: start;
+        gap: 20px;
     }
 
     footer hr {
@@ -697,6 +730,158 @@ footer hr {
     }
 }
 
-@media(max-width: 720px) {
+@media(max-width: 570px) {
+    .logo {
+        width: 50%;
+    }
+
+    .top-content__head {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .top-content__list p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .top-content__list-item {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    /*  */
+
+    .placing-block {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .placing__top p:first-child, .placing__top p span {
+        font-size: 35px;
+    }
+
+    .placing__top p:last-child {
+        font-size: 20px;
+    }
+
+    .placing__circles {
+        flex-direction: column;
+        gap: 160px;
+        position: relative;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .circle__container {
+        width: max-content;
+    }
+
+    .circle__container p {
+        font-size: 24px;
+    }
+
+    .circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    .dots {
+        display: none;
+    }
     
+    .dotimg {
+        display: block;
+        width: 110px;
+        rotate: 90deg;
+    }
+
+    /*  */
+
+    .placing__form {
+        margin-top: 80px;
+    }
+
+    .form-top {
+        height: fit-content;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .dropdown, .email-input, .name-input {
+        width: 100%;
+        flex-grow: unset;
+        flex-basis: unset;
+        height: 40px;
+    }
+
+    .select {
+        padding-left: 0 !important;
+        font-size: 16px;
+    }
+    
+    .form-bottom {
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+
+    .file-input__label {
+        padding: 10px 0;
+        margin-top: 20px;
+        border-radius: 3px;
+    }
+
+    #rangevalue, .output__container span {
+        font-size: 24px !important;
+    }
+    
+    #rangevalue {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        transform: translateX(20px);
+    }
+
+    .submit-form {
+        width: 100%;
+        margin-top: 40px;
+        padding: 20px 0;
+    }
+
+    /* */
+
+    footer {
+        flex-wrap: wrap;
+        padding: 15px 10vw;
+        height: fit-content;
+        align-items: start;
+    }
+
+    footer hr {
+        display: none;
+    }
+
+    .footer__copyright {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    footer div {
+        display: block;
+    }
+
+    footer div p, footer div a {
+        font-size: 20px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    footer img {
+        width: 40px;
+        height: 40px;
+    }
 }
