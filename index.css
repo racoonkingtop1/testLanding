@@ -34,7 +34,6 @@ header {
 }
 
 .burger-btn {
-    display: flex;
     flex-direction: column;
     gap: 4px;
     background-color: unset;
@@ -42,6 +41,7 @@ header {
     align-items: center;
     justify-content: center;
     z-index: 5;
+    display: none;
 }
 
 .topline {
@@ -92,7 +92,7 @@ header {
     left: 0;
     width: 100%;
     height: 100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
@@ -573,105 +573,16 @@ footer hr {
         width: 16.48vw;
         height: 3.88vw;
     }
+
+    .opened-nav {
+        display: none;
+    }
+
+    .burger-btn, .closed-nav {
+        display: flex;
+    }
 }
 
 @media(max-width: 720px) {
-    header {
-        height: auto;
-        padding: 40px 20px;
-    }
-
-    .logo {
-        width: 40%;
-        height: auto;
-    }
-
-    .opened-nav   {
-        display: none;
-    }
-
-
-
-    .top-block {
-        background-color: rgb(255, 255, 255, 0.2);
-        padding-left: 0;
-        padding-right: 0;
-    }
     
-    .top-content {
-        width: max-content;
-        padding: 2rem;
-        box-sizing: border-box;
-        height: 100%;
-        margin: 0 auto;
-        
-        backdrop-filter: blur(2px);
-    }
-
-    .placing-block {
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-
-    .dropdown, .email-input, .name-input, .form-bottom {
-        height: 50px;
-        box-sizing: border-box;
-    }
-
-    .dropdown .select {
-        padding-top: 1.2rem !important;
-    }
-
-    .form-bottom {
-        flex-wrap: wrap;
-        height: fit-content;
-    }
-
-    .range__container {
-        margin: 10px;
-    }
-
-    .button-file-input {
-        height: 50px;
-    }
-    
-    .file-input__label {
-        box-sizing: border-box;
-        border-radius: 3px;
-    }
-
-    .submit-form {
-        height: 50px;
-        width: 50%;
-    }
-
-    footer {
-        height: fit-content;
-        gap: 1rem;
-        flex-wrap: wrap;
-        gap: 20px 40px;
-        padding: 10px 20px;
-        justify-content: center;
-        align-items: start;
-    }
-
-    footer div {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
-    }
-
-    footer a, footer p, .footer__copyright {
-        font-size: 1rem;
-    }
-
-    .footer__copyright {
-        justify-content: center;
-        width: 100%;
-    }
-
-    footer hr {
-        display: none;
-    }
 }
