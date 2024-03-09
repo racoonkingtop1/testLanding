@@ -536,7 +536,7 @@ footer hr {
         width: 100%;
         justify-content: center;
         align-items: center;
-        padding: 80px 40px;
+        padding: 80px 10px;
         background-color: rgb(255, 255, 255, 0.2);
         backdrop-filter: blur(5px);
         gap: 80px;
@@ -547,18 +547,18 @@ footer hr {
     }
 
     .top-content__head {
-        font-size: 40px;
+        font-size: 35px;
         text-align: center;
     }
 
     .top-content__list p {
-        font-size: 30px;
-        line-height: 35px;
+        font-size: 25px;
+        line-height: 30px;
     }
 
     .top-content__list-item {
-        font-size: 30px;
-        line-height: 35px;
+        font-size: 25px;
+        line-height: 30px;
     }
 
     .top-content__btns {
