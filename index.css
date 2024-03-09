@@ -548,6 +548,7 @@ footer hr {
 
     .top-content__head {
         font-size: 35px;
+        line-height: 45px;
         text-align: center;
     }
 
@@ -568,7 +569,7 @@ footer hr {
     }
 
     .top-content__btns button {
-        font-size: 30px;
+        font-size: 20px;
         width: 40%;
         height: fit-content;
     }
